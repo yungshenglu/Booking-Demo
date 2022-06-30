@@ -1,0 +1,1 @@
+export { CustomInputNumber as default } from './CustomInputNumber';
