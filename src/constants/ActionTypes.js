@@ -1,0 +1,4 @@
+export const UPDATE_GUEST = 'UPDATE_GUEST';
+export const UPDATE_ROOM = 'UPDATE_ROOM';
+export const UPDATE_ROOM_ADULT = 'UPDATE_ROOM_ADULT';
+export const UPDATE_ROOM_CHILD = 'UPDATE_ROOM_CHILD';

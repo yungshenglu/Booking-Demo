@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useCallback } from 'react';
 import PropTypes from 'prop-types';
 
 import { StyledButton } from './CustomButton.styles';
@@ -12,11 +12,11 @@ export const CustomButton = (props) => {
 
   const timer = useRef(null);
 
-  const handleLongPress = () => {
+  const handleLongPress = useCallback(() => {
     timer.current = setInterval(() => {
       onClick();
     }, 300);
-  };
+  }, [onClick]);
 
   const handleClearTimeout = () => {
     clearInterval(timer.current);
@@ -37,7 +37,7 @@ export const CustomButton = (props) => {
   );
 };
 
-CustomButton.prototype = {
+CustomButton.propTypes = {
   disabled: PropTypes.bool,
   content: PropTypes.oneOfType([
     PropTypes.node,

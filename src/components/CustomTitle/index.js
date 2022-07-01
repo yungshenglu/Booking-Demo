@@ -1,0 +1,1 @@
+export { CustomTitle as default } from './CustomTitle';

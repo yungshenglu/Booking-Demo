@@ -7,8 +7,8 @@ const StyledButton = styled.button(({
     display: 'block',
     height: '3rem',
     width: '3rem',
-    margin: '0.25rem',
-    borderRadius: '0.25rem',
+    margin: '0.25rem 0',
+    borderRadius: '0.5rem',
     borderColor: disabled
       ? theme.colors.disabled
       : theme.colors.primary,
