@@ -3,8 +3,8 @@ import { ThemeProvider } from '@emotion/react'
 
 import RoomAllocationForm from '@/containers/RoomAllocationForm';
 import {
-  DEFAULT_MIN_GUEST,
-  DEFAULT_MIN_ROOM,
+  INITIAL_GUEST,
+  INITIAL_ROOM,
 } from '@/constants/RoomConstants';
 
 import basicTheme from './theme/basicTheme';
@@ -12,8 +12,8 @@ import basicTheme from './theme/basicTheme';
 const App = () => (
   <ThemeProvider theme={basicTheme}>
     <RoomAllocationForm
-      guest={DEFAULT_MIN_GUEST}
-      room={DEFAULT_MIN_ROOM}
+      guest={INITIAL_GUEST}
+      room={INITIAL_ROOM}
       // onChange={handleChange}
     />
   </ThemeProvider>

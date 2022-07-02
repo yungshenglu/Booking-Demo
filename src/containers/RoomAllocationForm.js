@@ -25,8 +25,6 @@ const RoomAllocationForm = (props) => {
     room,
   }));
 
-  console.log('formData[ROOM_DETAIL]:', formData[ROOM_DETAIL]);
-
   const handleAddRoomDetail = (value) => {
     setFormData((prev) => ({
       ...prev,
@@ -48,9 +46,6 @@ const RoomAllocationForm = (props) => {
     setFormData((prev) => ({
       ...prev,
       [fieldName]: value,
-      // ...(fieldName === TOTAL_ROOM && {
-      //   [ROOM_DETAIL]: currentRoomDetail,
-      // }),
     }));
   };
 
