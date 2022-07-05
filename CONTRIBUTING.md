@@ -11,7 +11,7 @@ I'd love to accept your patches and contributions to this project. There are jus
    # Clone your fork of the repo into the current directory
    $ git clone https://github.com/<YOUR_USERNAME>/Booking-Demo
    # Navigate to the newly cloned directory
-   $ cd Interview
+   $ cd Booking-Demo
    ```
 2. Create new branch named `develop` and switch to this branch
    ```bash
